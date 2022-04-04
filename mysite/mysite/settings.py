@@ -25,7 +25,7 @@ SECRET_KEY = '#i16sc6n7o(z4+rbf&yd69+lh@x9l6lh-=-b6upt_5o(%y6&yh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.100.59','188.244.18.201','ctfutm.ddns.net','192.168.100.71','192.168.1.19','127.0.0.1','0.0.0.0']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
