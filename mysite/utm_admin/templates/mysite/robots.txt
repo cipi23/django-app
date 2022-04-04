@@ -1,0 +1,2 @@
+User-agent: superman
+Allow: /utm_admin/
