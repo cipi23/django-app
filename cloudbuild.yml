@@ -28,8 +28,8 @@ steps:
    'set', 
    'image', 
    'deployment', 
-   '<app-name>', 
-   '<app-name>=gcr.io/$PROJECT_ID/django-app1:$BRANCH_NAME-$COMMIT_SHA'
+   'django-app1', 
+   'django-app1=gcr.io/$PROJECT_ID/django-app1:$BRANCH_NAME-$COMMIT_SHA'
   ]
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-west1'
