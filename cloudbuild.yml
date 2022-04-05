@@ -34,7 +34,7 @@ steps:
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-west1'
   - 'CLOUDSDK_CONTAINER_CLUSTER=mycluster'
-# push images to Google Container Registry with tags
+# push images to Google Container Registry with tag
 images: [
    'gcr.io/$PROJECT_ID/django-app1:$TAG_NAME',
    'gcr.io/$PROJECT_ID/django-app1:latest'
