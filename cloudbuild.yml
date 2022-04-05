@@ -11,7 +11,7 @@ steps:
   args: [
    'build', 
    '-t', 
-   'gcr.io/$PROJECT_ID/django-app1:$TAG_NAME',
+   'gcr.io/$PROJECT_ID/django-app1:$BRANCH_NAME-$COMMIT_SHA',
    '-t', 
    'gcr.io/$PROJECT_ID/django-app1:latest',
    '.'
@@ -29,13 +29,13 @@ steps:
    'image', 
    'deployment', 
    '<app-name>', 
-   '<app-name>=gcr.io/$PROJECT_ID/django-app1:$TAG_NAME'
+   '<app-name>=gcr.io/$PROJECT_ID/django-app1:$BRANCH_NAME-$COMMIT_SHA'
   ]
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=us-west1'
   - 'CLOUDSDK_CONTAINER_CLUSTER=mycluster'
 # push images to Google Container Registry with 
 images: [
-   'gcr.io/$PROJECT_ID/django-app1:$TAG_NAME',
+   'gcr.io/$PROJECT_ID/django-app1:$BRANCH_NAME-$COMMIT_SHA',
    'gcr.io/$PROJECT_ID/django-app1:latest'
   ]
