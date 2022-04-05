@@ -4,7 +4,7 @@ metadata:
   name: django-service
 spec:
   selector:
-    app: django-site
+    app: django-app1
   ports:
   - port: 8080
     targetPort: 8080
